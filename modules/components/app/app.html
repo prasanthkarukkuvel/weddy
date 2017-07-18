@@ -40,39 +40,18 @@
 </md-sidenav>
 <div class="app--wrapper">
   <div class="app__layout">
-    <div class="my-slideshows" data-cycle-slides="> div" data-cycle-fx="scrollVert" data-cycle-reverse="true" data-cycle-timeout="4000">
-      <div class="app__layout__slider">
-        <div class="app__layout__slider--background">
-
+    <div class="my-slideshows" data-cycle-slides="> div" data-cycle-fx="scrollVert" data-cycle-reverse="true" data-cycle-timeout="4000" data-cycle-pause-on-hover="true">
+      <div class="app__layout__slider" ng-repeat="slide in $ctrl.slides track by $index">
+        <div class="app__layout__slider--background" ng-class="'app__layout__slider--background--'+($index+1)">
         </div>
-        <div class="app__layout__slider--content">
-
+        <div class="app__layout__slider--content" ng-class="'app__layout__slider--content--'+($index+1)">
         </div>
         <div class="app__layout__slider_text">
           <div class="app__layout__text-items">
             <ul class="app__layout__text-items--wrapper">
               <li>
                 <div class="app__layout__text-item">
-                  <span>Capturing photos that speak too you</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="app__layout__slider">
-        <div class="app__layout__slider--background">
-
-        </div>
-        <div class="app__layout__slider--content">
-
-        </div>
-        <div class="app__layout__slider_text">
-          <div class="app__layout__text-items">
-            <ul class="app__layout__text-items--wrapper">
-              <li>
-                <div class="app__layout__text-item">
-                  <span>Capturing photos that speak too you 2</span>
+                  <span ng-bind="slide"></span>
                 </div>
               </li>
             </ul>

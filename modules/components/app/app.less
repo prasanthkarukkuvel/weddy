@@ -23,7 +23,6 @@
     transform: scale( 1);
   }
 }
-
 @keyframes beats {
   0% {
     transform: scale(1.1);
@@ -33,9 +32,11 @@
     transform: scale(1.15) translate(10px, 10px) rotate(2deg);
   }
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 app-view,
 default-app {
   &:extend(.relative);
@@ -88,7 +89,7 @@ app-view {
         &:extend(.absolute);
         &:extend(.full-width);
         height: 110%;
-        background: #fff url('../images/cover.jpg') center no-repeat;
+        background: #fff center no-repeat;
         background-size: cover;
         top: 0;
         left: 0;
@@ -103,7 +104,7 @@ app-view {
         &:extend(.absolute);
         &:extend(.full-width);
         &:extend(.full-height);
-        background: transparent url('../images/cover.jpg') center no-repeat;
+        background: transparent center no-repeat;
         background-size: contain;
         .screen-xs-sm({ background-size: cover; });
         top: 0;
@@ -119,6 +120,37 @@ app-view {
           left: 0;
           background: rgba(0,0,0,0.15);
         }
+      }
+
+      &--background--1, &--content--1 {
+        background-image: url('../images/1.jpg');
+      }
+      &--background--2, &--content--2 {
+        background-image: url('../images/2.jpg');
+      }
+      &--background--3, &--content--3 {
+        background-image: url('../images/3.jpg');
+      }
+      &--background--4, &--content--4 {
+        background-image: url('../images/4.jpg');
+      }
+      &--background--5, &--content--5 {
+        background-image: url('../images/5.jpg');
+      }
+      &--background--6, &--content--6 {
+        background-image: url('../images/6.jpg');
+      }
+      &--background--7, &--content--7 {
+        background-image: url('../images/7.jpg');
+      }
+      &--background--8, &--content--8 {
+        background-image: url('../images/8.jpg');
+      }
+      &--background--9, &--content--9 {
+        background-image: url('../images/9.jpg');
+      }
+      &--background--10, &--content--10 {
+        background-image: url('../images/10.jpg');
       }
 
       &_text {

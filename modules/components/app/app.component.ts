@@ -6,11 +6,24 @@ export namespace twoDudes.component.app {
   }
 
   export class AppController implements IAppController {
-    public static $inject: string[] = ["$interval", "$window", "$mdMedia"];
+    public static $inject: string[] = ["$interval", "$window", "$mdMedia", "$timeout"];
     public time: { [key: string]: number } = {};
     public onDay: Date = new Date(2017, 9, 4, 6, 30, 0);
 
-    constructor(public $interval: ng.IIntervalService, private $window: ng.IWindowService, private $mdMedia: ng.material.IMedia) {
+    public slides: string[] = [
+      "Hello this i a famcy text1",
+      "Hello this i a famcy text2",
+      "Hello this i a famcy text3",
+      "Hello this i a famcy text4",
+      "Hello this i a famcy text5",
+      "Hello this i a famcy text6",
+      "Hello this i a famcy text7",
+      "Hello this i a famcy text8",
+      "Hello this i a famcy text9",
+      "Hello this i a famcy text10"
+    ];
+
+    constructor(public $interval: ng.IIntervalService, private $window: ng.IWindowService, private $mdMedia: ng.material.IMedia, public $timeout: ng.ITimeoutService) {
 
     }
 
@@ -18,7 +31,11 @@ export namespace twoDudes.component.app {
       this.updateCountdown();
       this.$interval(this.updateCountdown.bind(this), 1000);
 
-      ($( '.my-slideshows' ) as any).cycle();
+      this.$timeout(() => {
+        ($('.my-slideshows') as any).cycle({
+          easing: "easeInOutExpo"
+        });
+      });
     }
 
     private updateCountdown(): void {
