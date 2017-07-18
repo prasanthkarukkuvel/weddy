@@ -1,0 +1,30 @@
+{
+  "name": "AppName",
+  "description": "App description",
+  "main": "app/app.js",
+  "authors": [],
+  "license": "ISC",
+  "keywords": [],
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.5.2",
+    "angular-material": "~1.0.6",
+    "angular-ui-router": "~0.2.15",
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "resolutions": {
+    "angular": "1.5.2"
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true,
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "listFiles": false,
+        "moduleResolution": "node"
+    },
+    "compileOnSave": false,
+    "filesGlob": [
+        "./modules/**/*.ts",
+        "./typings/main.d.ts",
+        "./node_modules/immutable/dist/immutable.d.ts",
+        "./node_modules/rxjs/Rx.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true,
+        "formatOnSave": false
+    },
+    "files": [
+        "./modules/api/app/Framework.ts",
+        "./modules/api/app/IFramework.ts",
+        "./modules/app.ts",
+        "./modules/components/app/app.component.ts",
+        "./modules/components/app/component.ts",
+        "./modules/components/app/config/CompileProvider.ts",
+        "./modules/components/app/config/HttpProvider.ts",
+        "./modules/components/app/config/MdIconProvider.ts",
+        "./modules/components/app/config/MdThemingProvider.ts",
+        "./modules/components/app/config/Router.ts",
+        "./modules/components/app/default.component.ts",
+        "./modules/components/header/component.ts",
+        "./modules/components/header/header.component.ts",
+        "./modules/constants/default/DefaultType.ts",
+        "./modules/constants/default/IDefaultType.ts",
+        "./typings/main.d.ts",
+        "./node_modules/immutable/dist/immutable.d.ts",
+        "./node_modules/rxjs/Rx.d.ts"
+    ]
+}

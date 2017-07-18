@@ -1,0 +1,405 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left">
+  <div class="header__navigation">
+    <div class="header__navigation--links">
+      <div class="header__link-items">
+        <ul class="header__link-items--wrapper">
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link active">CHECK IN</a>
+            </div>
+          </li>
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link">GALLERY</a>
+            </div>
+          </li>
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link">ABOUT</a>
+            </div>
+          </li>
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link">PORTFOLIO</a>
+            </div>
+          </li>
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link">PHOTOGRPAHERS</a>
+            </div>
+          </li>
+          <li class="header__link-item">
+            <div class="header__link-item--wrapper">
+              <a href="#" class="header__link-item--link">CONTACT</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</md-sidenav>
+<div class="app--wrapper">
+  <div class="app__layout">
+    <div class="my-slideshows" data-cycle-slides="> div" data-cycle-fx="scrollVert" data-cycle-reverse="true" data-cycle-timeout="4000">
+      <div class="app__layout__slider">
+        <div class="app__layout__slider--background">
+
+        </div>
+        <div class="app__layout__slider--content">
+
+        </div>
+        <div class="app__layout__slider_text">
+          <div class="app__layout__text-items">
+            <ul class="app__layout__text-items--wrapper">
+              <li>
+                <div class="app__layout__text-item">
+                  <span>Capturing photos that speak too you</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="app__layout__slider">
+        <div class="app__layout__slider--background">
+
+        </div>
+        <div class="app__layout__slider--content">
+
+        </div>
+        <div class="app__layout__slider_text">
+          <div class="app__layout__text-items">
+            <ul class="app__layout__text-items--wrapper">
+              <li>
+                <div class="app__layout__text-item">
+                  <span>Capturing photos that speak too you 2</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <two-dudes-header></two-dudes-header>
+  </div>
+  <div class="app__layout__about_section app__layout__about_section--top">
+    <div class="app__layout__about_section--wrapper">
+      <div class="app__layout__about_logo">
+        <div class="app__layout__about_logo--wrapper">
+          <div class="app__layout__about_logo--img">
+
+          </div>
+          <div class="app__layout__about_logo--text">
+            <div class="app__layout__about_logo-title">
+              <span>NEELA & PRASANTH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__layout__about_content">
+        <div class="app__layout__about_content--wrapper">
+          <div class="app__layout__about_content--text">
+            <div class="app__layout__about_content-title">
+              <span>3 knots 2 hearts 1 love.</span>
+            </div>
+          </div>
+          <div class="app__layout__about_content--justify">
+            <div class="app__layout__about_content-written">
+              <p><span>One love</span>, two hearts, three knots, seven steps, a dozen promises and a lifetime of togetherness. Our love has chosen us for each other, in all its wisdom it could see, that we were always meant to be, together.</p>
+              <div>
+                <div class="fb-like" data-href="http://www.neelaprasanth.wedding" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+              </div>
+              <p class="app__layout__about_content-invite">
+                It is our moment to celebrate the love that unites us, with joyful hearts we request your presence on the day as we become
+              </p>
+              <p class="app__layout__about_content-wowes">
+                Mr & Mrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__layout__about_content">
+        <div class="app__layout__about_content--wrapper">
+
+          <div class="app__layout__about_content--justify">
+            <div class="app__layout__about_content-written">
+              <div>
+                What we want most for our wedding is to have all of our friends and family there to celebrate the occasion with us, and so, more than anything we would simply enjoy your presence, For that just follow the timeline.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__layout__about_content">
+        <div class="app__layout__about_content--wrapper">
+          <div class="app__layout__about_content--text">
+            <div class="app__layout__about_content-title">
+              <span>the celebration timeline.</span>
+            </div>
+          </div>
+          <div class="app__layout__countdown">
+            <div class="app__layout__countdown__wrapper" md-whiteframe="4dp" layout="row" layout-align="space-around center">
+              <div class="app__layout__countdown__progress">
+                <div class="app__layout__countdown__section">
+                  <md-progress-circular md-mode="determinate" value="{{$ctrl.time.d}}" md-diameter="60" class="md-accent md-hue-3">
+                  </md-progress-circular>
+                  <div class="app__layout__countdown__value" ng-bind="$ctrl.time.dd"></div>
+                </div>
+                <div class="app__layout__countdown__info">
+                  days
+                </div>
+              </div>
+              <div class="app__layout__countdown__progress">
+                <div class="app__layout__countdown__section">
+                  <md-progress-circular md-mode="determinate" value="{{$ctrl.time.h}}" md-diameter="60" class="md-accent md-hue-3">
+                  </md-progress-circular>
+                  <div class="app__layout__countdown__value" ng-bind="$ctrl.time.hh"></div>
+                </div>
+                <div class="app__layout__countdown__info">
+                  hrs
+                </div>
+              </div>
+              <div class="app__layout__countdown__progress">
+                <div class="app__layout__countdown__section">
+                  <md-progress-circular md-mode="determinate" value="{{$ctrl.time.m}}" md-diameter="60" class="md-accent md-hue-3">
+                  </md-progress-circular>
+                  <div class="app__layout__countdown__value" ng-bind="$ctrl.time.mm"></div>
+                </div>
+                <div class="app__layout__countdown__info">
+                  mins
+                </div>
+              </div>
+              <div class="app__layout__countdown__progress">
+                <div class="app__layout__countdown__section">
+                  <md-progress-circular md-mode="determinate" value="{{$ctrl.time.s}}" md-diameter="60" class="md-accent md-hue-3">
+                  </md-progress-circular>
+                  <div class="app__layout__countdown__value" ng-bind="$ctrl.time.ss"></div>
+                </div>
+                <div class="app__layout__countdown__info">
+                  secs
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app__layout__timeline">
+            <div class="app__layout__timeline__wrapper" layout="column" layout-align="center stretch">
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline--left">
+                    <span class="app__layout__timeline__header">SEPTEMBER</span>
+                  </div>
+                  <div class="app__layout__timeline--node"></div>
+                  <div flex="40" class="app__layout__timeline--right">
+                    <span class="app__layout__timeline__header-info">Vilathikulam, Tuticorin</span>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline--left">
+                    <div class="app__layout__timeline__location">
+                      <span>Sri Sakthi Murugan Mahal</span>
+                    </div>
+                    <div class="app__layout__timeline__location-info">
+                      <span>Sannathi Street, Vilathikulam, Tuticorin - 628907</span>
+                    </div>
+                  </div>
+                  <div class="app__layout__timeline--icon">
+                    <md-icon md-svg-icon="ic_location_on" class="app__layout__timeline--icon-location"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline--right">
+                    <iframe frameborder="0" style="border:0; width:100%; height:100%; min-height:300px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ9Jplzr_BzlQ5_fBJNZr4arFbGH2Yv0c&q=9.1330551,78.167824" allowfullscreen>  </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline__phone app__layout__timeline--left">
+                    <div class="app__layout__timeline__phone-section" md-whiteframe="2">
+                      <div class="app__layout__timeline__phone-name">
+                        Nobin Karthik
+                      </div>
+                      <div class="app__layout__timeline__phone-info">
+                        <md-icon md-svg-icon="ic_phone" class="app__layout__timeline--icon-phone"></md-icon>
+                        <a href="tel:919791122737">+919791122737</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app__layout__timeline--icon">
+                    <md-icon md-svg-icon="ic_directions" class="app__layout__timeline--icon-direction"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline__route app__layout__timeline--right">
+                    <div class="app__layout__timeline__route-direction">
+                      <a href="https://www.google.com/maps/dir/Vilathikulam+Bus+Stand,+Vilathikulam,+Tamil+Nadu+628907,+India/9.1330551,78.167824/@9.1318592,78.1662,18z/data=!3m1!4b1!4m8!4m7!1m5!1m1!1s0x3b015b07cd992863:0xef956c63dbaf0a96!2m2!1d78.1668422!2d9.1304047!1m0?hl=en-US"
+                        target="_blank" class="app__layout__timeline__route-link">
+    <span class="app__layout__timeline__route-info"><md-icon md-svg-icon="ic_directions_bus"></md-icon> 5 min (320 mt)</span> from Vilathikulam Bus Stand
+                      </a>
+                    </div>
+                    <div class="app__layout__timeline__route-direction">
+                      <a href="https://www.google.com/maps/dir/Kovilpatti,+Tamil+Nadu,+India/9.1330551,78.167824/@9.1827946,77.8744006,16.75z/data=!4m8!4m7!1m5!1m1!1s0x3b06b2679acf7137:0xea8301542a97c340!2m2!1d77.8730984!2d9.182573!1m0?hl=en-US" target="_blank" class="app__layout__timeline__route-link">
+    <span class="app__layout__timeline__route-info"><md-icon md-svg-icon="ic_directions_transit"></md-icon> 52 min (34.4 km)</span> from Kovilpatti(CVP) Railway Station
+                      </a>
+                      <div class="app__layout__timeline__route-via">
+                        via SH 44
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline__time app__layout__timeline--left">
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-info">Sunday, 03.09.17</span>
+                      <md-icon md-svg-icon="ic_access_time" class="app__layout__timeline--icon-time"></md-icon> <span class="app__layout__timeline__time-day-range">6:30 - 8:30 p.m.</span>
+                    </div>
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-event">Betrothal,</span> followed by Dinner
+                    </div>
+                    <md-button target="_blank" class="md-accent md-raised" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=amxhcGR1MnFqajVxcWllamowNmhsMnMzZXMgbjQ4NXBhMmdwcHRodXVnY3Q4dnJqNzdybDBAZw&tmsrc=n485pa2gppthuugct8vrj77rl0%40group.calendar.google.com"
+                    />ADD TO CALENDAR</md-button>
+                  </div>
+                  <div class="app__layout__timeline--node"></div>
+                  <div flex="40" class="app__layout__timeline--right">
+
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline--left">
+
+                  </div>
+                  <div class="app__layout__timeline--icon app__layout__timeline--icon--large">
+                    <md-icon md-svg-icon="ic_favorite_border" class="app__layout__timeline--icon-wowes"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline__time app__layout__timeline--right">
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-info">Monday, 04.09.17</span>
+                      <md-icon md-svg-icon="ic_access_time" class="app__layout__timeline--icon-time"></md-icon> <span class="app__layout__timeline__time-day-range">6:30 - 7:30 a.m.</span>
+                    </div>
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-event app__layout__timeline__time-day-event--main">We are tying the knot,</span> followed by Breakfast
+                    </div>
+                    <md-button target="_blank" class="md-accent md-raised" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDlhNWVrbWpxcjRraDdxOTQwNzg3dXJnaHMgbjQ4NXBhMmdwcHRodXVnY3Q4dnJqNzdybDBAZw&tmsrc=n485pa2gppthuugct8vrj77rl0%40group.calendar.google.com"
+                    />ADD TO CALENDAR</md-button>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline--left">
+                    <span class="app__layout__timeline__header">SEPTEMBER</span>
+                  </div>
+                  <div class="app__layout__timeline--node"></div>
+                  <div flex="40" class="app__layout__timeline--right">
+                    <span class="app__layout__timeline__header-info">Triplicane, Chennai</span>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40">
+                    <iframe frameborder="0" style="border:0; width:100%; height:100%; min-height:300px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ9Jplzr_BzlQ5_fBJNZr4arFbGH2Yv0c&q=Sri+Mahaveer+Jain+Bhavan,+New+10,+Old+77,+Pillaiyar+Koil+Street,+Triplicane,+Triplicane,+Ellis+Puram,+Padupakkam,+Triplicane,+Chennai,+Tamil+Nadu+600005"
+                      allowfullscreen>  </iframe>
+                  </div>
+                  <div class="app__layout__timeline--icon">
+                    <md-icon md-svg-icon="ic_location_on" class="app__layout__timeline--icon-location"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline--right">
+                    <div class="app__layout__timeline__location">
+                      <span>Sri Mahaveer Jain Bhavan</span>
+                    </div>
+                    <div class="app__layout__timeline__location-info">
+                      <span>77 Pillaiyar Koil Street, Thiruvateeswaranpet, Triplicane, Chennai - 600005</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline__route app__layout__timeline--left">
+                    <div class="app__layout__timeline__route-direction">
+                      <a href="https://www.google.co.in/maps/dir/Triplicane+Post+Office,+Triplicane+High+Road,+Police+Quarters,+Triplicane,+Chennai,+Tamil+Nadu/Sri+Mahaveer+Jain+Bhavan,+New+10,+Old+77,+Pillaiyar+Koil+Street,+Triplicane,+Triplicane,+Ellis+Puram,+Padupakkam,+Triplicane,+Chennai,+Tamil+Nadu+600005/@13.0603892,80.2713902,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3a52661f8610e3cf:0x3ec7f343001b067d!2m2!1d80.274599!2d13.0598201!1m5!1m1!1s0x3a52661f1557bec5:0x9e11e205f3d69e9f!2m2!1d80.2725587!2d13.0608935"
+                        target="_blank" class="app__layout__timeline__route-link">
+    <span class="app__layout__timeline__route-info"><md-icon md-svg-icon="ic_directions_bus"></md-icon> 4 min (300 mt)</span> from Triplicane Post Office Bus Stop
+                      </a>
+                      <div class="app__layout__timeline__route-via">
+                        bus no 32, 32A, 32B, 29D, 38C
+                      </div>
+                    </div>
+                    <div class="app__layout__timeline__route-direction">
+                      <a href="https://www.google.co.in/maps/dir/Tiruvallikkeni+Triplicane,+Palandi+Amman+Koil+Street,+Mattan+Kuppam,+Triplicane,+Chennai,+Tamil+Nadu/Sri+Mahaveer+Jain+Bhavan,+New+10,+Old+77,+Pillaiyar+Koil+Street,+Triplicane,+Triplicane,+Ellis+Puram,+Padupakkam,+Triplicane,+Chennai,+Tamil+Nadu+600005/@13.0579823,80.2750782,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3a52689e938ae1a7:0x97ecea8851c982ea!2m2!1d80.2805559!2d13.0552739!1m5!1m1!1s0x3a52661f1557bec5:0x9e11e205f3d69e9f!2m2!1d80.2725587!2d13.0608935"
+                        target="_blank" class="app__layout__timeline__route-link">
+    <span class="app__layout__timeline__route-info"><md-icon md-svg-icon="ic_directions_transit"></md-icon> 8 min (1.4 km)</span> from Tiruvallikkeni Station
+                      </a>
+                      <div class="app__layout__timeline__route-via">
+                        via Bharathi Salai/ Pycrofts Rd
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app__layout__timeline--icon">
+                    <md-icon md-svg-icon="ic_directions" class="app__layout__timeline--icon-direction app__layout__timeline--icon-direction--inverse"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline__phone app__layout__timeline--right">
+                    <div class="app__layout__timeline__phone-section" md-whiteframe="2">
+                      <div class="app__layout__timeline__phone-name">
+                        Thanga Praveen
+                      </div>
+                      <div class="app__layout__timeline__phone-info">
+                        <md-icon md-svg-icon="ic_phone" class="app__layout__timeline--icon-phone"></md-icon> +918939221018
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40" class="app__layout__timeline--left">
+
+                  </div>
+                  <div class="app__layout__timeline--icon app__layout__timeline--icon--large">
+                    <md-icon md-svg-icon="ic_favorite_border" class="app__layout__timeline--icon-wowes"></md-icon>
+                  </div>
+                  <div flex="40" class="app__layout__timeline__time app__layout__timeline--right">
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-info">Sunday, 10.09.17</span>
+                      <md-icon md-svg-icon="ic_access_time" class="app__layout__timeline--icon-time"></md-icon> <span class="app__layout__timeline__time-day-range">7:00 p.m. onwards</span>
+                    </div>
+                    <div class="app__layout__timeline__time-day">
+                      <span class="app__layout__timeline__time-day-event app__layout__timeline__time-day-event--main">Reception,</span> followed by Dinner
+                    </div>
+                    <md-button target="_blank" class="md-accent md-raised" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGc3YnJ1bGtmbjNuMGM0OWc0czAwbmdoZzAgbjQ4NXBhMmdwcHRodXVnY3Q4dnJqNzdybDBAZw&tmsrc=n485pa2gppthuugct8vrj77rl0%40group.calendar.google.com"
+                    />ADD TO CALENDAR</md-button>
+                  </div>
+                </div>
+              </div>
+              <div class="app__layout__timeline__segment">
+                <div layout="row" layout-align="space-around center">
+                  <div flex="40">
+
+                  </div>
+                  <div class="app__layout__timeline--node"></div>
+                  <div flex="40" class="app__layout__timeline--right">
+                    <span class="app__layout__timeline__header-ever">Happily ever after...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="fb-page" data-href="https://www.facebook.com/2DudesPhotography/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/2DudesPhotography/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/2DudesPhotography/">2 Dudes Photography</a></blockquote>
+        </div>
+      </div>
+      <div class="app__layout__comments">
+        <div class="fb-comments" data-href="https://www.neelaprasanth.wedding" data-numposts="50" data-order-by="reverse_time"></div>
+      </div>
+    </div>
+  </div>
+</div>
