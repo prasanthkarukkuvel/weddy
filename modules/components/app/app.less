@@ -25,7 +25,11 @@
 }
 @keyframes beats {
   0% {
-    transform: scale(1.1);
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.075) translate(-10px, -10px) rotate(1deg);
   }
 
   100% {
@@ -48,7 +52,7 @@ default-app {
 }
 
 app-view {
-  background: #fff;
+  background: #fff url('../images/clean-gray-paper.png') repeat center;
 
   .app {
     &--wrapper {
@@ -71,9 +75,9 @@ app-view {
     .screen-sm({ height: 580px; });
     .screen-xs({ height: 460px; });
 
-    two-dudes-header {
-      position: relative;
-      z-index: 4;
+    two-dudes-header {      
+      z-index: 5;
+      display: inline-block;
     }
     &:extend(.relative);
 
@@ -95,7 +99,7 @@ app-view {
         left: 0;
         z-index: 1;
         margin: -6px;
-        filter: blur(6px) contrast(1) saturate(1.5);
+        filter: blur(5px) contrast(1) saturate(1.5);
         transform: scale(1.1);
         animation: 6s infinite beats alternate;
       }
@@ -122,35 +126,64 @@ app-view {
         }
       }
 
-      &--background--1, &--content--1 {
+      &--background--1,
+      &--content--1 {
         background-image: url('../images/1.jpg');
+        animation-delay: 0;
       }
-      &--background--2, &--content--2 {
+
+      &--background--2,
+      &--content--2 {
         background-image: url('../images/2.jpg');
+        animation-delay: 9s;
       }
-      &--background--3, &--content--3 {
+
+      &--background--3,
+      &--content--3 {
         background-image: url('../images/3.jpg');
+        animation-delay: 8s;
       }
-      &--background--4, &--content--4 {
+
+      &--background--4,
+      &--content--4 {
         background-image: url('../images/4.jpg');
+        animation-delay: 7s;
       }
-      &--background--5, &--content--5 {
+
+      &--background--5,
+      &--content--5 {
         background-image: url('../images/5.jpg');
+        animation-delay: 6s;
       }
-      &--background--6, &--content--6 {
+
+      &--background--6,
+      &--content--6 {
         background-image: url('../images/6.jpg');
+        animation-delay: 5s;
       }
-      &--background--7, &--content--7 {
+
+      &--background--7,
+      &--content--7 {
         background-image: url('../images/7.jpg');
+        animation-delay: 4s;
       }
-      &--background--8, &--content--8 {
+
+      &--background--8,
+      &--content--8 {
         background-image: url('../images/8.jpg');
+        animation-delay: 3s;
       }
-      &--background--9, &--content--9 {
+
+      &--background--9,
+      &--content--9 {
         background-image: url('../images/9.jpg');
+        animation-delay: 2s;
       }
-      &--background--10, &--content--10 {
+
+      &--background--10,
+      &--content--10 {
         background-image: url('../images/10.jpg');
+        animation-delay: 1s;
       }
 
       &_text {
@@ -190,19 +223,19 @@ app-view {
       &-item {
         font-family: 'Raleway';
         display: inline-block;
-        text-transform: uppercase;
         color: #fff;
         .font-size(3.2);
         text-align: right;
-        border-right: @md-yellow-500 5px solid;
+        border-right: @inv-yellow 5px solid;
         line-height: 57px;
         .screen-sm({ .font-size(2.4); line-height: 49px; });
         .screen-xs({ .font-size(2); line-height: 44px; });
         margin: 16px;
         overflow: hidden;
+        max-width: 800px;
 
         span {
-          background-color: rgba(0,0,0,0.3);
+          background: rgba(43, 13, 45, 0.59) url('../images/xv.png') repeat center;
           display: inline;
           padding: 10px 16px;
           white-space: pre-wrap;
@@ -216,8 +249,8 @@ app-view {
     &__about {
       &_section {
         &:extend(.relative);
-        padding: 24px 16px 16px;
-        .screen-xs({ padding-top: 0});
+        padding: 68px 16px 16px;
+        .screen-xs({ padding-top: 24px});
 
         &--wrapper {}
 
@@ -229,11 +262,25 @@ app-view {
             left: 0;
             bottom: 0;
             height: 140px;
-            background: #fff;
+            background: #fff url('../images/clean-gray-paper.png') repeat top;
             z-index: 3;
             margin: -60px 0 0;
             transform: rotate(-5deg);
             width: 110%;
+          }
+
+          &:before {
+            top: 0;
+            &:extend(.absolute);
+            content: "";
+            width: 110%;
+            z-index: 4;
+            height: 16px;
+            left: -4px;
+            background: @inv-brown url( '../images/washi.png') repeat -14px -14px;
+            margin: -60px 0 0;
+            transform: rotate(-5deg);
+            border-bottom: 5px @inv-yellow solid;
           }
         }
       }
@@ -242,10 +289,10 @@ app-view {
         z-index: 6;
         &:extend(.relative);
         position: absolute;
-        top: -80px;
+        top: -30px;
         right: 0;
-        .screen-sm({ top: -60px;});
-        .screen-xs({ top: -60px;});
+        .screen-sm({ top: -20px;});
+        .screen-xs({ top: -35px;});
 
         &--wrapper {
           padding: 0 48px 0 0;
@@ -348,6 +395,7 @@ app-view {
           font-family: 'Great Vibes';
           .font-size(5.2);
           margin-bottom: 0;
+          color: @inv-tur-blue;
         }
       }
     }
@@ -363,6 +411,7 @@ app-view {
         margin: 56px 24px 0;
         .screen-sm({ margin: 48px 12px 0; });
         .screen-xs({ margin: 48px 0px 0; });
+        background: transparent url("../images/tileable-wood-colored.png") repeat center;
 
         md-progress-circular {
           background: #ebedde;
@@ -620,7 +669,7 @@ app-view {
         height: 32px;
         border: @inv-brown 5px solid;
         border-radius: 50%;
-        background: #fff;
+        background: #fff url('../images/clean-gray-paper.png') repeat center;
         .screen-sm({ width: 28px; height: 28px; });
         .screen-xs({ width: 24px; height: 24px; });
       }
@@ -628,7 +677,7 @@ app-view {
       &--icon {
         width: 60px;
         height: 60px;
-        background: #fff;
+        background: #fff url('../images/clean-gray-paper.png') repeat center;
         border-radius: 50%;
         .screen-sm({ width: 54px; height: 54px; });
         .screen-xs({ width: 46px; height: 46px; });
@@ -664,7 +713,7 @@ app-view {
           min-height: 60px;
           .screen-sm({ min-width: 54px; min-height: 54px; });
           .screen-xs({ min-width: 46px; min-height: 46px; });
-          border: 5px solid #fff;
+          border: 5px solid transparent;
           border-radius: 50%;
         }
 
@@ -683,6 +732,11 @@ app-view {
           }
         }
       }
+    }
+
+    &__pages {
+      &:extend(.full-width);
+      padding: 56px 16px;
     }
 
     &__comments {

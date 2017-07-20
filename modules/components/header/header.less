@@ -43,7 +43,7 @@ two-dudes-header {
       &--links {
         &:extend(.relative);
         z-index: 1;
-        background: @inv-voilet-fer;
+        background: @inv-voilet-fer url( '../images/flowers.png') repeat center;
         min-height: 240px;
       }
     }
@@ -96,11 +96,20 @@ two-dudes-header {
       &--wrapper {
         &:extend(.absolute);
         z-index: -1;
-        background: @inv-voilet-fer;
         width: 340px;
         height: 240px;
         transform: translate(-16%,-46%) rotate(20deg);
         .screen-xs-sm({ display: none; });
+        overflow: hidden;
+
+        &:after {
+          &:extend(.absolute);
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: @inv-voilet-fer url( '../images/flowers.png') repeat bottom;
+          transform: translate(-6px,-82px) rotate(-20deg);
+        }
       }
 
       &--links {
@@ -111,7 +120,7 @@ two-dudes-header {
           &:extend(.absolute);
           &:extend(.full-width);
           content: "";
-          background: @inv-voilet-fer;
+          background: @inv-voilet-fer url( '../images/flowers.png') repeat bottom;
           top: 100%;
           height: 200px;
           .screen-xs-sm({ display: none; });
@@ -121,7 +130,6 @@ two-dudes-header {
 
     &__link {
       &-items {
-
         .screen-xs-sm({display: none;});
 
         ul {
@@ -146,7 +154,7 @@ two-dudes-header {
 two-dudes-header {
   &:extend(.block);
   &:extend(.relative);
-  .screen-xs-sm({ position: fixed; width: 100%;});
+  .screen-xs-sm({ position: fixed; width: 100%; });
   overflow: hidden;
 
   .header {
@@ -162,13 +170,14 @@ two-dudes-header {
       white-space: nowrap;
       overflow: hidden;
       z-index: 1;
+      display: inline-block;
 
       &--wrapper {
-        background: #fff;
+        background: #fff url('../images/clean-gray-paper.png') repeat center;
         color: @inv-voilet;
         text-align: center;
         padding: 16px 0;
-        .screen-xs-sm({ display: inline-block; vertical-align: top});
+        .screen-xs-sm({ display: inline-block; vertical-align: top; background-image: none;});
         .screen-sm({ padding: 8px 0 16px 0; width: 274px; });
         .screen-xs({ padding: 0px 0 8px 0; width: 192px; });
       }
@@ -178,7 +187,7 @@ two-dudes-header {
         .screen-xs-sm({ display: inline-block; vertical-align: top});
         .screen-sm({ height: 99px; });
         .screen-xs({ height: 63px; });
-        background: @inv-voilet-fer;
+        background: @inv-voilet-fer url( '../images/flowers.png') repeat center;
         &:extend(.relative);
 
         .md-button {
@@ -260,11 +269,11 @@ two-dudes-header {
         .screen-xs({ height: 63px; });
 
         &--wrapper {
-          background:#fff;
+          background: #fff url('../images/clean-gray-paper.png') repeat top;
           width: 340px;
           height: 240px;
           transform: translate(0, -60%) rotate(20deg);
-          .screen-xs-sm({width: 117px; height: 90px;});
+          .screen-xs-sm({width: 117px; height: 90px; background-image: none; });
           .screen-sm({transform: translate(-66px,-18px) rotate(-59deg); });
           .screen-xs({transform: translate(-66px,-55px) rotate(-59deg);});
         }

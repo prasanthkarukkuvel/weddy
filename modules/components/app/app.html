@@ -1,40 +1,40 @@
 <md-sidenav class="md-sidenav-left" md-component-id="left">
   <div class="header__navigation">
     <div class="header__navigation--links">
-      <div class="header__link-items">
-        <ul class="header__link-items--wrapper">
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link active">CHECK IN</a>
-            </div>
-          </li>
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link">GALLERY</a>
-            </div>
-          </li>
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link">ABOUT</a>
-            </div>
-          </li>
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link">PORTFOLIO</a>
-            </div>
-          </li>
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link">PHOTOGRPAHERS</a>
-            </div>
-          </li>
-          <li class="header__link-item">
-            <div class="header__link-item--wrapper">
-              <a href="#" class="header__link-item--link">CONTACT</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <div class="header__link-items">
+            <ul class="header__link-items--wrapper">
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#invite" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">INVITE</a>
+                    </div>
+                </li>
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#timeline" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">TIMELINE</a>
+                    </div>
+                </li>
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#wedding" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">WEDDING</a>
+                    </div>
+                </li>
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#reception" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">RECEPTION</a>
+                    </div>
+                </li>
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#photography" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">PHOTOGRAPHY</a>
+                    </div>
+                </li>
+                <li class="header__link-item">
+                    <div class="header__link-item--wrapper">
+                        <a href="#comments" ng-click="$ctrl.close()" du-smooth-scroll du-scrollspy class="header__link-item--link">COMMENTS</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
   </div>
 </md-sidenav>
@@ -63,7 +63,7 @@
     <two-dudes-header></two-dudes-header>
   </div>
   <div class="app__layout__about_section app__layout__about_section--top">
-    <div class="app__layout__about_section--wrapper">
+    <div class="app__layout__about_section--wrapper" id="invite">
       <div class="app__layout__about_logo">
         <div class="app__layout__about_logo--wrapper">
           <div class="app__layout__about_logo--img">
@@ -112,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="app__layout__about_content">
+      <div class="app__layout__about_content" id="timeline">
         <div class="app__layout__about_content--wrapper">
           <div class="app__layout__about_content--text">
             <div class="app__layout__about_content-title">
@@ -176,7 +176,7 @@
                   </div>
                 </div>
               </div>
-              <div class="app__layout__timeline__segment">
+              <div class="app__layout__timeline__segment" id="wedding">
                 <div layout="row" layout-align="space-around center">
                   <div flex="40" class="app__layout__timeline--left">
                     <div class="app__layout__timeline__location">
@@ -279,7 +279,7 @@
                   </div>
                 </div>
               </div>
-              <div class="app__layout__timeline__segment">
+              <div class="app__layout__timeline__segment" id="reception">
                 <div layout="row" layout-align="space-around center">
                   <div flex="40">
                     <iframe frameborder="0" style="border:0; width:100%; height:100%; min-height:300px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ9Jplzr_BzlQ5_fBJNZr4arFbGH2Yv0c&q=Sri+Mahaveer+Jain+Bhavan,+New+10,+Old+77,+Pillaiyar+Koil+Street,+Triplicane,+Triplicane,+Ellis+Puram,+Padupakkam,+Triplicane,+Chennai,+Tamil+Nadu+600005"
@@ -371,13 +371,63 @@
           </div>
         </div>
       </div>
-      <div>
-        <div class="fb-page" data-href="https://www.facebook.com/2DudesPhotography/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/2DudesPhotography/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/2DudesPhotography/">2 Dudes Photography</a></blockquote>
+      <div class="app__layout__pages" id="photography">
+        <div class="app__layout__about_content">
+          <div class="app__layout__about_content--wrapper">
+            <div class="app__layout__about_content--text">
+              <div class="app__layout__about_content-title">
+                <span>photography.</span>
+              </div>
+            </div>
+            <div class="app__layout__about_content--justify">
+              <div class="app__layout__about_content-written">
+                <p>
+                  Life is a camera, Face it with a smile and focus on what's important, we will capture it for you. - 2 Dudes Photography
+                </p>
+                <div class="fb-page" data-href="https://www.facebook.com/2DudesPhotography/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                  <blockquote cite="https://www.facebook.com/2DudesPhotography/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/2DudesPhotography/">2 Dudes Photography</a></blockquote>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="app__layout__comments">
-        <div class="fb-comments" data-href="https://www.neelaprasanth.wedding" data-numposts="50" data-order-by="reverse_time"></div>
+      <div class="app__layout__about_content" id="comments">
+        <div class="app__layout__about_content--wrapper">
+          <div class="app__layout__about_content--text">
+            <div class="app__layout__about_content-title">
+              <span>your blessings and love.</span>
+            </div>
+          </div>
+          <div class="app__layout__about_content--justify">
+            <div class="app__layout__about_content-written">
+              <div>
+                We are thankful for nights that turned into mornings, friends that turned into family, and families that tured into love. The love of friends and families are Life's Greatest Gift.
+              </div>
+              <p class="app__layout__about_content-invite">
+                do share your love and blessing for your happy married life.
+              </p>
+              <div class="app__layout__comments">
+                <div class="fb-comments" data-href="https://www.neelaprasanth.wedding" data-numposts="50" data-order-by="reverse_time"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__layout__about_content">
+        <div class="app__layout__about_content--wrapper">
+          <div class="app__layout__about_content--justify">
+            <div class="app__layout__about_content-written">
+              <p class="app__layout__about_content-invite">
+                expecting your presence on the day
+              </p>
+              <p class="app__layout__about_content-wowes">
+                Neela & Prasanth
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
