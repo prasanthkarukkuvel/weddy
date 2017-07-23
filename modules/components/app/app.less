@@ -49,9 +49,12 @@ a {
   }
 }
 
-body,
 html {
+  &:extend(.full-width);
   overflow-x: hidden;
+}
+
+body {
   &:extend(.full-width);
 }
 
@@ -302,7 +305,7 @@ app-view {
       &_logo {
         z-index: 6;
         &:extend(.relative);
-          &:extend(.absolute);
+        &:extend(.absolute);
         top: -30px;
         right: 0;
         .screen-sm({ top: -20px;});
@@ -410,7 +413,6 @@ app-view {
           .font-size(5.2);
           margin-bottom: 0;
           color: @inv-tur-blue;
-
           .screen-xs({ .font-size(3.6); });
         }
       }
