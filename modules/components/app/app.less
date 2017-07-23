@@ -37,8 +37,22 @@
   }
 }
 
-body {
+a {
+  &,
+  &:visited {
+    color: @inv-voilet-fer;
+  }
+
+  &:active,
+  &:hover {
+    color: @inv-pink;
+  }
+}
+
+body,
+html {
   overflow-x: hidden;
+  &:extend(.full-width);
 }
 
 app-view,
@@ -65,7 +79,7 @@ app-view {
 
 .my-slideshows {
   position: absolute!important;
-  width: 100%;
+  &:extend(.full-width);
   z-index: 0!important;
 }
 
@@ -75,7 +89,7 @@ app-view {
     .screen-sm({ height: 580px; });
     .screen-xs({ height: 460px; });
 
-    two-dudes-header {      
+    two-dudes-header {
       z-index: 5;
       display: inline-block;
     }
@@ -288,7 +302,7 @@ app-view {
       &_logo {
         z-index: 6;
         &:extend(.relative);
-        position: absolute;
+          &:extend(.absolute);
         top: -30px;
         right: 0;
         .screen-sm({ top: -20px;});
@@ -396,6 +410,8 @@ app-view {
           .font-size(5.2);
           margin-bottom: 0;
           color: @inv-tur-blue;
+
+          .screen-xs({ .font-size(3.6); });
         }
       }
     }
@@ -425,13 +441,13 @@ app-view {
 
       &__progress,
       &__section {
-        position: relative;
+        &:extend(.relative);
         text-align: center;
       }
 
       &__progress {
         &::after {
-          position: absolute;
+          &:extend(.absolute);
           content: "";
           width: 5px;
           height: 100%;
@@ -450,7 +466,7 @@ app-view {
       }
 
       &__value {
-        position: absolute;
+        &:extend(.absolute);
         top: 50%;
         left: 50%;
         z-index: 2;
@@ -468,7 +484,7 @@ app-view {
         display: inline-block;
         color: #fff;
         border-radius: 3px;
-        position: relative;
+        &:extend(.relative);
         z-index: 1;
       }
     }
@@ -476,11 +492,11 @@ app-view {
     &__timeline {
       &__wrapper {
         padding: 24px 0;
-        position: relative;
+        &:extend(.relative);
         z-index: 1;
 
         &::after {
-          position: absolute;
+          &:extend(.absolute);
           content: "";
           width: 5px;
           height: 100%;
@@ -497,6 +513,12 @@ app-view {
         padding: 36px 0;
         .screen-sm({ padding:24px 0; });
         .screen-xs({ padding: 16px 0; });
+      }
+
+      &--left,
+      &--right {
+        &:extend(.relative);
+        z-index: 2;
       }
 
       &--left {
@@ -570,13 +592,6 @@ app-view {
 
         &-direction {
           padding: 8px 0;
-
-          a {
-            &:active,
-            &:hover {
-              color: @inv-pink;
-            }
-          }
         }
 
         &-info {
