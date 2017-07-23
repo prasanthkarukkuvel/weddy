@@ -10,6 +10,14 @@
   <meta property="og:description" content="Wedding Celebration of Neela & Prasanth" />
   <meta property="og:image" content="http://www.neelaprasanth.wedding/images/fb.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#5d365e">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#5d365e">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Khand:600|Exo+2:200,500|Raleway|Great+Vibes|Rochester' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/vendor.css" type='text/css' charset="utf-8">
+  <link rel="stylesheet" href="css/app.css" type='text/css' charset="utf-8">
+
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -26,12 +34,6 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#5d365e">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#5d365e">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500|Khand:600|Exo+2:200,500|Raleway|Great+Vibes|Rochester' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/vendor.css" type='text/css' charset="utf-8">
-  <link rel="stylesheet" href="css/app.css" type='text/css' charset="utf-8">
 </head>
 
 <body ng-cloak>
@@ -42,7 +44,7 @@
       if (d.getElementById(id)) return;
       js = d.createElement(s);
       js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=499495740391867";
+      js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=499495740391867";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
